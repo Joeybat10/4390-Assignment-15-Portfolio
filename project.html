@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Case Study</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="top">
+
+<!-- HEADER -->
+<header>
+    <div class="logo-section"> 
+        <img src="images/Modern marketplace logo design.png" alt="logo">
+        <a href="index.html"><h1>Joey Battista</h1></a>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html#about">About Me</a></li>
+            <li><a href="index.html#skills">My Skills</a></li>
+            <li><a href="project.html">Webpage Case Study</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="case-study">
+
+    <!-- HERO / CONTEXT -->
+    <section class="case-hero">
+        <h2>eMarket Web App</h2>
+        <p>
+            A marketplace-style web application designed to help users browse,
+            post, and interact with listings in a clean and intuitive interface.
+        </p>
+        <p><strong>Role:</strong> Application Developer | <strong>Tech:</strong> HTML, CSS, JavaScript</p>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="case-section">
+        <h3>Problem</h3>
+        <p>
+             The problem that we are trying to solve is that we wanted to create a local marketplace application that combined the best elements of Ebay and Facebook Marketplace.
+             However, when inspecting the two we found some issues. We liked that fact that Facebook Marketplace is a more local marketplace but we found it lacking in details and organization. This leads to a more dated and clunky experience for the user that could be modernized.
+             When we also took a look at Ebay, we loved the advanced filtering, categorization, and customer experience present. Upon close inspection though, we realized it was lacking in what made Facebook Marketplace great. This being it's local listings and more community driven experience.
+             So we set out to create a platform that could mend the strengths of both of these two platforms into one unified experience that we call eMarket.
+
+        </p>
+    </section>
+
+    <!-- CONTEXT / OVERVIEW -->
+    <section class="case-section alt">
+        <h3>Project Overview</h3>
+        <p>
+             Our local marketplace application is called eMarket. It is designed to be a place where anyone local to your location can post a listing and sell an item that they have.
+             eMarket is for anyone looking to buy or sell products second hand. The goal of our team was to create a frictionless experience that learned from the mistakes of other prominent platforms.
+        </p>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="case-section">
+        <h3>Process</h3>
+        <p>
+             Initially we started with basic sketches of what we wanted our platform to look like. We knew from the start we needed home, search, post, product, and help pages.
+             We wanted to keep the design as simple as possible without hindering on any functionality. Here are our low-fidelity sketches:
+        </p>
+
+        <!-- VISUAL 1 -->
+        <figure>
+            <img src="/images/Sketches.png" alt="Sketches">
+            <figcaption></figcaption>
+        </figure>
+
+        <p>
+            Once we had our sketches completed and had our blueprint laid out, we got to designing our wireframes. These are intended to lay out a pseudo-product and emulate design flows.
+            These helped us to further develop and refine our initial designs created in our sketches and to also start thinking about how the whole application will be linked together.
+            Already, when creating these wireframes we took to updating our design like implementing a header navigation bar and figuring out where to put key features like a dark mode toggle.
+        </p>
+
+        <!-- VISUAL 2 -->
+        <figure>
+            <img src="images/WireFrames1.png" alt="Wireframes1">
+            <figcaption></figcaption>
+        </figure>
+
+        <p>
+            After the creation of these wireframes, we went through
+        </p>
+    </section>
+
+
+        <!-- TESTING / FEEDBACK -->
+    <section class="case-section alt">
+        <h3>Testing & Feedback</h3>
+        <p>
+             Once we had our wireframes created, we did a series of testing in order to get feedback. We consulted various other classmates and had them test our wireframe flows.
+             This was done to see how our product holds up in real world testing. We took note of how fast they were able to navigate through pages and locate key features. 
+             We logged their feedback and these were the standout recordings.
+        </p>
+
+        <li>
+            When making an offer, all users completed the task successfully. The offer button was highly visible and intuitive to use.
+        </li>
+
+        <li>
+            When changing from light mode to dark mode, all users encountered usability issues with this task. The main issue was the button's location within the “Account” menu along the footer, which was clearly not intuitive. This was our biggest oversight.
+        </li>
+
+        <li>
+            When wishlisting and un-wishlisting an item, we received mixed feedback about whether or not to add an alert box in addition to the button updating to inform the user the item was added to their wishlist.
+        </li>
+
+        <p>
+             After doing our rounds of testing, the biggest problems that needed solving became clear. First, without doubt the largest problem for the testers was locating the dark mode toggle. We had it previously buried within a menu that was difficult to find and not apparent to the user.
+             We made the change of creating a quick access pop-up menu in the header that includes important links. This is where we put our dark mode toggle in our final design and we have now received much better feedback. Below is the before and after of this functionality:
+        </p>
+
+        <div class="image-row">
+        <figure>
+            <img src="images/DarkModeToggleBefore.png" alt="DarkModeToggleBefore">
+            <figcaption></figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/DarkModeToggleAfter.png" alt="DarkModeToggleAfter">
+            <figcaption></figcaption>
+        </figure>
+        </div>
+
+        <p>
+            Second, the other big problem we noticed testers encountering was not recognizing when an item was saved. We previously had a button set up, but when it was clicked, it wasn't apparent to the user that it as actually saved and sent to the saved listings page.
+            The change we made to address this was having heart on the save button itself. When the user clicks the save button, the heart turns red and the text changes to "saved" instead of "save". Below is the before and after of this functionality:
+        </p>
+
+        <div class="image-row">
+        <figure>
+            <img src="images/SaveBefore.png" alt="SaveBefore">
+            <figcaption></figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/SaveAfter.png" alt="SaveAfter">
+            <figcaption></figcaption>
+        </figure>
+        </div>
+
+    </section>
+
+    <!-- DESIGN DECISIONS -->
+    <section class="case-section">
+        <h3>Design Decisions</h3>
+        <p>
+             On eMarket, all of our decisions came from a functionality perspective. Whe asked ourselves what would be the most highly functional, accessible, and efficient design we could create.
+             I'll now go through each page and analyze why each major design elements was chosen:
+
+             <li>
+                <strong> Application wide elements: </strong> We knew from the start that we needed proper headers and footers present throughout the entire navigation of the application.
+                This creates a consistent experience that never leaves a user lost. They always have a present form of navigation to quickly access different pages or features like their account page or the dark mode toggle.
+                This is also done through a menu we created in the header that is a pop up and gives the user quick access to links. We also have a clickable logo in the header that also takes them back to the homepage when needed as well.
+                A search bar is also included in the header, allowing the user to search for a desired product from anywhere in the application.
+                All of these features are vital to having a smooth and accessible application.
+             </li>
+
+             <li>
+                <strong> Home Page:</strong> The specific layout for the home page was to keep listings recommended for the user front and center.
+                We also felt it necessary to give the user a quick access save button to save time of clicking on a listing to then save it for later.
+                We have each set of listings categorized underneath headers such as gaming, collectibles, furniture, etc...
+             </li>
+
+             <li>
+                <strong> Search Page: </strong> The goal of this page is a to have an uncategorized page of an amalgamation of different listings that can then be filtered and searched to the user's specifications.
+                If they want to only look for gaming items or search for a gaming mouse specifically, they can do so. This gives more freedom to the user to tailor the experience to them and their specific needs.
+             </li>
+
+             <li>
+                <strong> Post Page: </strong> On the post page, we first make sure that a user has an account before they can create a listing. This creates a way for them to properly track their items they are buying or selling.
+                Once an account is created, when they go to post a listing they can now do so. A user is required to include photos, title, price, and other various descriptors for their listing. This creates a unified user experience with listings that are easy to understand what is being sold.
+                We also give the seller easy ways to categorize their item with drop down menus, making it more convenient and efficient when creating a listing. Once they are done, they can hit the post button and it will be posted.
+             </li>
+
+             <li>
+                <strong> Help Page: </strong> This page is designed primarily with accordion menus. The goal here is to create the quickest and easiest to access way to get frequently asked questions answered.
+                If you see a question that you need answered in the accordion menus, simply click it and a secondary menu will drop down revealing the answer.
+                The reason we went with this design is it also creates a way to fit more questions on screen and is a very simple and easy to understand system for the user.
+             </li>
+
+             <li>
+                <strong> Product Page: </strong> When a user sees a product they like, they can click on the listing and be presented with all of its details. The user can then click offer or save to discuss with the seller a purchasing price or save the product for later.
+                This allows for a seamless and efficient experience for the user, allowing them to purchase or save a product in two button clicks or less.
+             </li>
+        </p>
+    </section>
+
+    <!-- Final Product -->
+    <section class="case-section alt">
+        <h3>Final Product</h3>
+        <p>
+            Here is the deployed link for our final product of eMarket. The experience overall is much more polished than our original sketches and wireframes. Our flows are completed with a functional search bar and account system.
+            Navigational features were added or optimized with where they were placed and the overall visuals were improved for a clean feel. Smooth animations like saving a listing, opening an accordion menu, etc... were also added.
+            We also fixed important design flaws revealed in our testing like the dark mode toggle placement and flow and feedback of actuating buttons. So overall, the finished application is functionally and visually in a completed state in comparison to our wireframes which were not.
+        </p>
+
+        <p>
+            <a href="https://magneticeagle.github.io/ITIS4390/index.html" target="_blank">View Live Project</a>
+        </p>
+    </section>
+
+    <!-- REFLECTION -->
+    <section class="case-section">
+        <h3>Reflection</h3>
+        <p>
+             Overall, working on this project was extremely beneficial. It helped to sharpen my coding skills, my collaboration skills, and my ability to work effectively in a group. It was also a great a great opportunity to thoroughly go through the development of a product from start to finish.
+        </p>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <section>
+        <h6><i class="fa-solid fa-envelope"></i> Contact</h6>
+        <p><a href="mailto:123@email.com">joeybattista15@gmail.com</a></p>
+        <p><a href="tel:1111111111">704-999-7291</a></p>
+    </section>
+
+    <ul class="socials">
+        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/joey-battista-2a92802b6/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+    </ul>
+
+    <p class="copyright">&copy; 2026 All Rights Reserved</p>
+    <a href="#top" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+</footer>
+
+</body>
+</html>
